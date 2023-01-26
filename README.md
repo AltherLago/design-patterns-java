@@ -1,3 +1,12 @@
+# Exploring Practical Design Patterns with Java
+
+Repository with implementations of design patterns explored in the Lab "Exploring Design Patterns in Practice with Java". Specifically, this project explored some patterns using pure Java:
+
+- Singleton
+- Strategy
+- Facade
+
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
