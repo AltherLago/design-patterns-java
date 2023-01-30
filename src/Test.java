@@ -8,22 +8,29 @@ public class Test {
 
         cleanConsoleScreen();
 
-        SingletonLazy lazy = SingletonLazy.getInstancia();
-        System.out.println(lazy);
-        lazy = SingletonLazy.getInstancia();
-        System.out.println(lazy);
-        System.out.println();
+        // SingletonLazy lazy = SingletonLazy.getInstancia();
+        // System.out.println(lazy);
+        // lazy = SingletonLazy.getInstancia();
+        // System.out.println(lazy);
+        // System.out.println();
         
-        SingletonEager eager = SingletonEager.getInstancia();
-        System.out.println(eager);
-        eager = SingletonEager.getInstancia();
-        System.out.println(eager);
-        System.out.println();
+        // SingletonEager eager = SingletonEager.getInstancia();
+        // System.out.println(eager);
+        // eager = SingletonEager.getInstancia();
+        // System.out.println(eager);
+        // System.out.println();
 
-		SingletonLazyHolder lazyHolder = SingletonLazyHolder.getInstancia();
-		System.out.println(lazyHolder);
-		lazyHolder = SingletonLazyHolder.getInstancia();
-		System.out.println(lazyHolder);
+		// SingletonLazyHolder lazyHolder = SingletonLazyHolder.getInstancia();
+		// System.out.println(lazyHolder);
+		// lazyHolder = SingletonLazyHolder.getInstancia();
+		// System.out.println(lazyHolder);
+
+        Behavior normal = new BehaviorNormal();
+
+        Robot robot = new Robot();
+        robot.setBehavior(normal);
+        robot.toMove();
+        robot.toMove();
     }
 
     public static void cleanConsoleScreen(){
