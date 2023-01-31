@@ -1,6 +1,12 @@
+
 import singleton.SingletonLazy;
 import singleton.SingletonEager;
 import singleton.SingletonLazyHolder;
+import strategy.Behavior;
+import strategy.BehaviorDefense;
+import strategy.BehaviorNormal;
+import strategy.BehaviorAggressive;
+import strategy.Robot;
 
 public class Test {
 
@@ -26,9 +32,19 @@ public class Test {
 		// System.out.println(lazyHolder);
 
         Behavior normal = new BehaviorNormal();
+        Behavior defense = new BehaviorDefense();
+        Behavior aggresive = new BehaviorAggressive();
 
         Robot robot = new Robot();
         robot.setBehavior(normal);
+        robot.toMove();
+        robot.toMove();
+        System.out.println();
+        robot.setBehavior(defense);
+        robot.toMove();
+        robot.toMove();
+        System.out.println();
+        robot.setBehavior(aggresive);
         robot.toMove();
         robot.toMove();
     }

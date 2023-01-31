@@ -1,6 +1,6 @@
 package strategy; 
 
-public class Robo {
+public class Robot {
 
     private Behavior behavior;
 
